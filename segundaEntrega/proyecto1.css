@@ -1,0 +1,171 @@
+a {
+    text-decoration: none;
+    color:inherit
+  }
+  
+  .log-in {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    color:white
+  }
+  header {
+    position: relative;
+    overflow: hidden;
+    background-color: #080808;
+    margin-bottom:50px;
+  }
+  
+  .frase-header {
+    margin: 15px;
+    text-align: center;
+    color:white
+  }
+  
+  .palabras-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none; /* esto es para sacarle el bullet point*/
+    align-items: flex-start;
+    padding: 15px;
+  }
+  
+  .palabras-header a {
+    background-color: purple;
+    color:white
+  }
+  
+  .fila-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: right;
+    margin:20px
+  }
+  
+  .input-barra {
+    border-radius: 8px;
+    height: 30px;
+  }
+  
+  h1{
+    color:white
+  }
+  h3{
+    color:white
+  }
+  h5{
+    color:white
+  }
+
+
+/* --- Body --- */
+
+body{
+    background-color:ivory
+}
+.primerContenedor {
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 300px);
+    
+}
+
+.imagen {
+    background-image:url(imagenes/bosque.jpeg) ;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    border: 3px solid brown;
+    margin: 5px;
+    background-size: cover;
+    background-position: center
+}
+
+.recaudado {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    border: 3px solid orange;
+    margin: 5px;
+    height: 100px
+}
+
+.contenedorGrande {
+    border: 2px solid green;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+}
+
+.item{
+    border: 2px solid red;
+    margin: 20px;
+}
+
+.item1 {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    
+    display:grid;
+    grid-template-rows:30% 70%;
+    background-size: cover;
+    background-position: center;
+}
+
+.hijo1{
+    border: solid 3px orange;
+    background-image: url(imagenes/bosque.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin:10px;
+    color:white;
+    text-align: center;
+}
+
+.hijo2{
+    border: solid 3px orange;
+    margin:10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 769px) {
+
+.palabras-header {
+        display:flex;
+        flex-direction: column;
+    }
+.primerContenedor{
+        display:flex;
+        flex-direction: column;
+    }
+.imagen {
+        background-image:url(imagenes/bosque.jpeg) ;
+        border: 3px solid brown;
+        margin: 5px;
+        background-size: cover;
+        background-position: center;
+        width: 90%;
+        height: 200px;
+    }
+
+.contenedorGrande{
+    display:flex;
+    flex-direction: column;
+}
+
+.item1{
+    height: 300px;
+}
+
+.hijo1{
+    height: 100px;
+    color:black;
+}
+
+.hijo2{
+    margin-top:30px
+}
+
+}
