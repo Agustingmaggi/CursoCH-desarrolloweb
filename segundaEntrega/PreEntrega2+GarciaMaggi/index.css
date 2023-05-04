@@ -104,6 +104,10 @@ b{
   word-wrap: break-word;
 }
 
+.titulo-premios{
+  margin: 50px
+}
+
 .premios{
   margin-bottom: 30px
 }
@@ -111,11 +115,6 @@ b{
 .iconos {
   font-size:2rem;
 }
-
-.titulo-premios{
-  margin:40px
-}
-
 
 footer {
   background-color: lightblue;
