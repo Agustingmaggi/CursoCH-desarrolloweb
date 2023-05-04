@@ -48,10 +48,12 @@ a {
   }
   
   h1{
-    color:white
+    color:white;
+    -webkit-text-stroke: 1px black
   }
   h3{
-    color:white
+    color:white;
+    -webkit-text-stroke: 1px black
   }
 
   .recaudado {

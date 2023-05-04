@@ -4,6 +4,10 @@ a {
   color:inherit
 }
 
+body{
+  background-color:lightgrey
+}
+
 .log-in {
   display: flex;
   flex-direction: row;
@@ -64,6 +68,7 @@ header {
   grid-template-rows: auto;
   background-color: #080808;
   border-radius: 10px;
+  margin-bottom: 30px;
   box-shadow: 0 5px 10px rgba(64, 32, 32, 0.5), 0 1px 2px rgba(0, 0, 0, 0.24)
 }
 
@@ -75,6 +80,10 @@ article {
   margin: 5px;
   background-color: rgba(255, 239, 87, 0.1);
   border-radius: 5px;
+}
+
+img{
+  padding:20px
 }
 
 
@@ -95,6 +104,19 @@ b{
   word-wrap: break-word;
 }
 
+.row{
+  margin-bottom: 30px
+}
+
+.iconos {
+  font-size:2rem;
+}
+
+.titulo-premios{
+  margin:40px
+}
+
+
 footer {
   background-color: lightblue;
   border: black;
@@ -102,7 +124,7 @@ footer {
   border-color: black;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 865px) {
   
   .palabras-header {
     display:flex;
